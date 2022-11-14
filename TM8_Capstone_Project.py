@@ -171,7 +171,7 @@ def rent_car():
         rent_day = int(input('Masukkan jumlah hari sewa: '))
         
         if car_total > car_all[car_id]['Stok Unit']:
-            print(f"Stok buah tidak cukup. Stok {car_all[car_id]['Mobil']} tersisa {car_all[car_id]['Stok Unit']} unit")
+            print(f"Stok mobil tidak mencukupi. Stok {car_all[car_id]['Mobil']} tersisa {car_all[car_id]['Stok Unit']} unit")
         else:
             rent_cart.append({
                 'Mobil': car_all[car_id]['Mobil'],
@@ -196,7 +196,7 @@ def rent_car():
 
         if check == 'Y':
             car_id = int(input('Masukkan CarID yang ingin di sewa: '))
-            print(f"Sisa stok {car_all['Mobil']} ada;ah {car_all[car_id]['Stok Unit']}.")
+            print(f"Sisa stok {car_all['Mobil']} adalah {car_all[car_id]['Stok Unit']}.")
 
             if (car_all[car_id]['Stok Unit'] == 0):
                 print('Mohon maaf unit mobil sedang kosong. Silahkan memilih unit mobil yang lain')
